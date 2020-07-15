@@ -1,13 +1,13 @@
 import React from 'react';
-import CatItem from './../catItem/CatItem';
+import OctopusItem from '../octopusItem/OctopusItem';
 import UserItem from './../userItem/UserItem';
 
 const WelcomeChat = ({ chat }) => {
     return (
         <div>
             {chat.map((message, index) =>
-                message.emmiter === 'Cat' ?
-                    <CatItem 
+                message.emmiter === 'Octopus' ?
+                    <OctopusItem 
                         key={message.id}
                         text={message.msg} />
                     :

@@ -25,8 +25,8 @@ const Chat = () => {
     const primerChat = [
         {
             id: 0,
-            emmiter: 'Cat',
-            msg: ['¡Hola!', '¿Cómo es tu nombre?']
+            emmiter: 'Octopus',
+            msg: ['¡Hola otra vez!', 'Me alegra que hayas entrado...', '¿Cómo es tu nombre?']
         }
     ]
 
@@ -55,12 +55,12 @@ const Chat = () => {
     function firstResponse(name) {
         let newChat = {
             id: idCounter + 2,
-            emmiter: 'Cat',
+            emmiter: 'Octopus',
             msg: [
                 '¡Mucho gusto, ' + name + '!',
-                'Mi nombre es Covid19, soy un virus en expansión',
-                '¡Estoy creciendo día a día gracias a la negligencia de las personas!',
-                '¡Hazme una pregunta y con gusto responderé...'
+                'Mi nombre es Octoplus y fui creado por Lucas Olivero...',
+                'Él tiene 29 años, vive en Córdoba y es Ingeniero en Sistemas de Información.',
+                '¿Qué más te gustaría saber sobre él?'
             ]
         }
         if (newChat) {
@@ -109,7 +109,7 @@ const Chat = () => {
         <div className='chatbot-chat-container'>
             <div className="chatbot-chat-content">
                 <Bounce top>
-                    <h1> ¡Vamos a conocernos! </h1>
+                    <h1> Conoce sobre Lucas... </h1>
                 </Bounce>
                 <div className="chatbot-chat">
                     <div className="chatbot-chat-container-body">

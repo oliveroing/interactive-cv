@@ -1,14 +1,14 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-import animationCat from './octopus.json';
-import './Cat.css';
+import animationOctopus from './octopus.json';
+import './Octopus.css';
 
-const Cat = ({ history }) => {
+const Octopus = ({ history }) => {
 
     const defaultOptions = {
         loop: true,
         autoplay: true,
-        animationData: animationCat
+        animationData: animationOctopus
     };
 
     function handleonClick() {
@@ -17,7 +17,7 @@ const Cat = ({ history }) => {
 
     return (
         <div onClick={handleonClick}
-            className='cat-container'>
+            className='octopus-container'>
             <Lottie
                 options={defaultOptions}
             />
@@ -26,4 +26,4 @@ const Cat = ({ history }) => {
 
 }
 
-export default Cat;
+export default Octopus;

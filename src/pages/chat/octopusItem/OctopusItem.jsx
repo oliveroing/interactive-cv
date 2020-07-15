@@ -1,13 +1,12 @@
 import React from 'react';
-import './CatItem.css';
-// import catAvatar from './../../../assets/images/covid19.gif';
-import catAvatar from './../../../assets/images/octopus.png';
+import './OctopusItem.css';
+import octopusAvatar from './../../../assets/images/octopus.png';
 import Fade from 'react-reveal/Fade';
 
-const CatItem = ({ text }) => {
+const OctopusItem = ({ text }) => {
     return (
         <div className='cat-item-container'>
-            <img src={catAvatar} alt="cat-avatar" />
+            <img src={octopusAvatar} alt="cat-avatar" />
             <div className="cat-item-messages">
                 {text.map((t, index) =>
                     <Fade
@@ -24,4 +23,4 @@ const CatItem = ({ text }) => {
     );
 };
 
-export default CatItem;
+export default OctopusItem;

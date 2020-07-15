@@ -1,11 +1,11 @@
-.cat-container {
+.octopus-container {
     width: 100%;
     height: 50vh;
     cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
-    .cat-container {
+    .octopus-container {
         height: 70vh;
     }
 }
