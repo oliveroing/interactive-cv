@@ -1,6 +1,6 @@
 {
-  "short_name": "PetBot",
-  "name": "Covid as Petbot",
+  "short_name": "InteractiveCV",
+  "name": "Lucas Olivero's Interactive CV ",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "octopus.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "covid2.png",
+      "src": "octopus.png",
       "type": "image/png",
       "sizes": "512x512"
     }

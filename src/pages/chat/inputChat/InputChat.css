@@ -1,6 +1,5 @@
 .chatbot-chat-input-container {
     width: 100%;
-    /* height: 10%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,7 +9,6 @@
 .chatbot-chat-input-container input {
     width: 80%;
     border: 1px solid #b7c4e9;
-    /* color: #432b51; */
     color: #093028;
     background: #d4dcf2;
     height: 35px;
@@ -22,6 +20,19 @@
     font-size: 14px;
 }
 
+.chatbot-chat-input-container input:not([disabled]) {
+    box-shadow: 2px 2px 15px 2px #244691;
+    font-weight: bold;
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
 .chatbot-chat-input-container input::placeholder {
     color: #a1b2e4;
     font-size: 14px;
@@ -31,14 +42,32 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 1px solid #093028;
-    background: #093028;
+    border: 1px solid #1A2980;
+    background: #1A2980;
     background-image: url('./../../../assets/images/send2.png');
     background-size: 16px;
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.16);
 }
+
+@-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+  }
 
 @media only screen and (min-width: 768px) {
     .chatbot-chat-input-container input {

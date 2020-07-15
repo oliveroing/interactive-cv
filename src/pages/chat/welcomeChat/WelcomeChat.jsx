@@ -7,7 +7,7 @@ const WelcomeChat = ({ chat }) => {
         <div>
             {chat.map((message, index) =>
                 message.emmiter === 'Cat' ?
-                    <CatItem
+                    <CatItem 
                         key={message.id}
                         text={message.msg} />
                     :

@@ -12,11 +12,11 @@ const Home = ({ history }) => {
                     <Cat history={history}></Cat>
                 </Bounce>
                 <div className="home-catbot-greeting">
-                    <Fade opposite>
+                    <Fade left>
                         <h1> ¡Hola humano! </h1>
                     </Fade>
-                    <Fade opposite>
-                        <label> ¿Quieres conversar? </label>
+                    <Fade right>
+                        <label> ¿Quieres conocer acerca del perfil de Lucas Olivero? </label>
                         <label> ¡Haz click sobre mí para comenzar! </label>
                     </Fade>
                 </div>

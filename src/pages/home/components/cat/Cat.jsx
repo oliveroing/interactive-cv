@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-import animationCat from './covid19.json';
+import animationCat from './octopus.json';
 import './Cat.css';
 
 const Cat = ({ history }) => {
