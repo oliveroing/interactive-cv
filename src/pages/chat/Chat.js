@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import InputChat from './inputChat/InputChat';
 import Select from './select/Select';
-import { doing, aboutMe } from '../../data/Actions';
+import { DOING, FUTURE, ABOUT, SOCIAL, OPTIONS } from '../../data/Actions';
 import WelcomeChat from './welcomeChat/WelcomeChat';
 import Interactions from './interactions/Interactions';
 import Bounce from 'react-reveal/Bounce';
@@ -10,17 +10,6 @@ import './Chat.css';
 const Chat = () => {
 
     let idCounter = 0;
-
-    const options = [
-        {
-            id: "doing",
-            text: "¿Qué estás haciendo?"
-        },
-        {
-            id: "about",
-            text: "Contame sobre vos..."
-        },
-    ];
 
     const primerChat = [
         {
@@ -82,24 +71,28 @@ const Chat = () => {
         setChat([...chat, msg]);
     }
 
+    function addInteraction(result) {
+        if (result) {
+            setInteractions([...interactions, result.msg]);
+        }
+    }
 
     function handleSelectedActions(value) {
         let result;
         switch (value) {
             case 'doing':
-                result = doing[Math.floor(Math.random() * doing.length)];
-                if (result) {
-                    setInteractions([...interactions, result.msg]);
-                }
+                addInteraction(DOING[0]);
                 break;
-
+            case 'future':
+                addInteraction(FUTURE[0]);
+                break;
             case 'about':
-                result = aboutMe[Math.floor(Math.random() * aboutMe.length)];
-                if (result) {
-                    setInteractions([...interactions, result.msg]);
-                }
+                result = ABOUT[Math.floor(Math.random() * ABOUT.length)];
+                addInteraction(result);
                 break;
-
+            case 'social':
+                addInteraction(SOCIAL[0]);
+                break;
             default:
                 console.log('No hay valores');
         }
@@ -109,7 +102,7 @@ const Chat = () => {
         <div className='chatbot-chat-container'>
             <div className="chatbot-chat-content">
                 <Bounce top>
-                    <h1> Conoce sobre Lucas... </h1>
+                    <h1> ¡Conoce sobre Lucas! </h1>
                 </Bounce>
                 <div className="chatbot-chat">
                     <div className="chatbot-chat-container-body">
@@ -119,17 +112,17 @@ const Chat = () => {
                         {openSelect &&
                             <Select
                                 handleSelectedActions={handleSelectedActions}
-                                options={options} />
+                                options={OPTIONS} />
                         }
                         {/* Respuestas de select */}
                         {
                             interactions.length > 0 && interactions.map((interaction, index) =>
                                 <Interactions
-                                    key={index} 
+                                    key={index}
                                     interaction={interaction}
                                     index={index}
                                     handleSelectedActions={handleSelectedActions}
-                                    options={options} />
+                                    options={OPTIONS} />
                             )
                         }
                         <div ref={divRef}></div>

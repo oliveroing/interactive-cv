@@ -1,23 +1,6 @@
-.selector-container {
-    width: 100%; 
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.selector-container-options {
-    background: #0d98c7;
-    border-radius: 5px;
-    box-sizing: border-box;
-    padding: 10px 0 10px 10px;
-    margin-right: 10px;
-}
-
 .selector-content {
-    width: 80%;
+    width: 100%;
     height: fit-content;
-    /* background: #e08b97; */
     border-radius: 5px;
     box-sizing: border-box;
     display: flex;
@@ -25,8 +8,27 @@
     margin: 10px 0 10px auto;
 }
 
+.selector-container {
+    width: 100%; 
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.selector-container-options {
+    width: 85%; 
+    background: #0d98c7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 10px;
+    margin-right: 10px;
+}
+
+.selector-options {
+    margin-right: -5px;
+}
+
 .selector-options label {
-    /* background: #b8717a; */
     background: #0d7ea3;
     width: 90%;
     box-sizing: border-box;
@@ -60,11 +62,12 @@ div[disabled] {
 @media only screen and (min-width: 768px) {
 
     .selector-container-options {
-        width: 100%;
+        width: 25%;
     }
 
     .selector-options label {
-        width: 97.5%;
+        width: 91%;
+        text-align: center;
     }
 
 }
