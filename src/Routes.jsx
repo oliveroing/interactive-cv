@@ -6,7 +6,7 @@ import {
     useHistory
 } from 'react-router-dom';
 import Home from './pages/home/Home';
-import Chat from './pages/chat/Chat';
+import Chat from './pages/chat/Chat.jsx';
 
 const Routes = () => {
 
