@@ -7,7 +7,7 @@ const InputChat = ({ sendMessage, getMeMessage, msg, chat }) => {
             onSubmit={ (e) => sendMessage(e) } 
             className='chatbot-chat-input-container'>
             <input
-                autoFocus={true}
+                // autoFocus={true}
                 disabled={ chat.length >= 3 ? true : false }
                 placeholder={ chat.length >= 3 ? 'Ya no puedes escribir' : 'Escribe tu nombre' }
                 type="text"
