@@ -12,7 +12,7 @@ const Select = ({ options, handleSelectedActions }) => {
             <div className='selector-container'>
                 <Fade 
                     right
-                    delay={500} >
+                    delay={300} >
                     <div className='selector-container-options'>
                         <div className='selector-options' disabled={disabled}>
                             {options.map(op =>

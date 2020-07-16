@@ -12,7 +12,7 @@ const OctopusItem = ({ text }) => {
                 {text.map((t, index) =>
                     <Fade
                         left
-                        delay={300}
+                        delay={100}
                         key={index}>
                         <label>
                             {t.indexOf('http') !== -1 ? <a href={t} rel="noopener noreferrer" target="_blank">Click aquí para ir al Perfil</a> : t}
