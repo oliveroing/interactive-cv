@@ -8,7 +8,7 @@ const Interactions = ({ interaction, index, handleSelectedActions, options }) =>
     return (
         <Fragment key={index}>
             <Fade left>
-                <OctopusItem key={ImageBitmapRenderingContext} text={interaction}> </OctopusItem>
+                <OctopusItem key={index} text={interaction}> </OctopusItem>
             </Fade>
             <Fade right>
                 <Select

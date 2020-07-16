@@ -1,7 +1,7 @@
 .chatbot-chat-container {
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    overflow: scrol;
 }
 
 .chatbot-chat-content h1 {
@@ -13,7 +13,7 @@
 
 .chatbot-chat-content {
     width: 85%;
-    height: 100%;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@
 
 .chatbot-chat {
     width: 100%;
-    height: 500px;
+    height: 70vh;
     background:white;
     margin: auto;
     border-radius: 15px;
@@ -51,6 +51,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+
+    .chatbot-chat {
+        height: 500px;
+    }
 
     .chatbot-chat-container {
         width: 80%;
