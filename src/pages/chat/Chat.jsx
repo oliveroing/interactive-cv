@@ -47,7 +47,7 @@ const Chat = () => {
             emmiter: 'Octopus',
             msg: [
                 '¡Mucho gusto, ' + name + '!',
-                'Mi nombre es Octoplus y fui creado por Lucas Olivero...',
+                'Mi nombre es Boctopus y fui creado por Lucas Olivero...',
                 'Él tiene 29 años, vive en Córdoba y es Ingeniero en Sistemas de Información.',
                 '¿Qué más te gustaría saber sobre él?'
             ]

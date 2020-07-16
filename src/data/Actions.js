@@ -9,7 +9,8 @@ export const DOING = [
 
 export const FUTURE = [
     {
-        msg: [ 'Le gustaría poder trabajar como desarrollador en alguna empresa, para poder seguir creciendo profesionalmente y así aprender nuevas tecnologías y metodologías de trabajo.',
+        msg: [ 'Le gustaría poder trabajar en el área de desarrollo de alguna empresa, para poder seguir creciendo profesionalmente y así aprender nuevas tecnologías y metodologías de trabajo.',
+                'Está dispuesto a trabajar tanto part-time como full-time, y también On Site o Home Office.',
                 'En cuanto a tecnologías, ya estuvo trabajando con Angular y ahora está aprendiendo y practicando React, de hecho a esta página la hizo con React y la ayuda de Google.',
                 'Podés ver un poco más acerca de tus proyectos en su repositorio de GitHub: ',
                 'https://github.com/oliveroing'] 
