@@ -31,7 +31,8 @@ export const ABOUT = [
 
 export const SOCIAL = [
     {
-        msg: [ 'Podés ingresar a su página de Linktree y desde ahí ver su información y diferentes redes: ', 
+        msg: [ 'Su correo electrónico es oliveroing@gmail.com', 
+                'Además, podés ingresar a su página de Linktree y desde ahí ver su información detallada y diferentes redes personales: ', 
                 'https://linktr.ee/oliveroing' ]
     }
 ];

@@ -48,7 +48,7 @@ const Chat = () => {
             msg: [
                 '¡Mucho gusto, ' + name + '!',
                 'Mi nombre es Boctopus y fui creado por Lucas Olivero...',
-                'Él tiene 29 años, vive en Córdoba y es Ingeniero en Sistemas de Información.',
+                'Él tiene 30 años, vive en Córdoba y es Ingeniero en Sistemas de Información.',
                 '¿Qué más te gustaría saber sobre él?'
             ]
         }
